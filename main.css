@@ -33,7 +33,7 @@ header {
     height: 5px;
     margin: 6px 0px;
     transition: 0.3s
-    /*animation when clicked*/
+        /*animation when clicked*/
 }
 
 .hamburger:after,
@@ -45,7 +45,7 @@ header {
     background-color: #fff;
     margin: 6px 0px;
     transition: 0.3s
-    /*animation when clicked*/
+        /*animation when clicked*/
 }
 
 .hamburger.is-active:before {
@@ -76,13 +76,15 @@ header {
 }
 
 .mobile-nav.is-active {
-    left: 0; /*snaps right into the left side*/
+    left: 0;
+    /*snaps right into the left side*/
 }
 
 .mobile-nav a {
     width: 100%;
     max-width: 200px;
-    margin: 0 auto; /*center links*/
+    margin: 0 auto;
+    /*center links*/
     text-align: center;
     padding: 12px;
     border-radius: 10px;
