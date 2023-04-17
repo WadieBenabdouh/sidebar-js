@@ -14,20 +14,6 @@ body {
     padding-right: 128px
 }
 
-@media (max-width: 1024px) {
-    .container {
-        padding-left: 64px;
-        padding-right: 64px
-    }
-}
-
-@media (max-width: 767px) {
-    .container {
-        padding-left: 32px;
-        padding-right: 32px
-    }
-}
-
 .hamburger {
     width: 35px;
     cursor: pointer;
@@ -94,16 +80,6 @@ body {
     background-color: #24104f
 }
 
-@media (min-width: 768px) {
-    .mobile-nav {
-        display: none
-    }
-
-    .hamburger {
-        display: none
-    }
-}
-
 header {
     position: fixed;
     width: 100%;
@@ -148,4 +124,30 @@ header.is-scrolling {
 header.is-scrolling .container {
     padding-top: 16px;
     padding-bottom: 16px
+}
+
+
+/*MEDIA QUERIES*/
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 64px;
+        padding-right: 64px
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile-nav {
+        display: none
+    }
+
+    .hamburger {
+        display: none
+    }
 }
