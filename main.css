@@ -8,10 +8,15 @@ body {
     background-color: #625e69;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
 .container {
     margin: 0 auto;
-    padding-left: 128px;
-    padding-right: 128px
+    padding-inline: 128px;
 }
 
 .hamburger {
@@ -28,6 +33,7 @@ body {
     height: 5px;
     margin: 6px 0px;
     transition: 0.3s
+    /*animation when clicked*/
 }
 
 .hamburger:after,
@@ -39,7 +45,7 @@ body {
     background-color: #fff;
     margin: 6px 0px;
     transition: 0.3s
-        /*animation when clicked*/
+    /*animation when clicked*/
 }
 
 .hamburger.is-active:before {
@@ -70,41 +76,34 @@ body {
 }
 
 .mobile-nav.is-active {
-    left: 0;
+    left: 0; /*snaps right into the left side*/
 }
 
 .mobile-nav a {
     width: 100%;
     max-width: 200px;
-    margin: 0 auto;
+    margin: 0 auto; /*center links*/
     text-align: center;
     padding: 12px;
     border-radius: 10px;
-    background-color: #1f103F;
-    color: #FFF;
+    background-color: #e97210;
+    color: #000000;
     text-decoration: none
 }
 
 .mobile-nav a:hover {
-    background-color: #24104f
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    z-index: 99
+    background-color: #a89ac7
 }
 
 header .container {
     padding-top: 32px;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 }
 
 header .container h2 {
     color: #48fd51;
-    text-transform: uppercase;
     font-size: 32px;
 }
 
@@ -117,18 +116,12 @@ header .container nav {
 header .container nav a {
     color: inherit;
     font-size: 20px;
-    text-decoration: none
+    text-decoration: none;
 }
 
 header.is-scrolling {
     background-color: #12002F
 }
-
-/* header.is-scrolling .container {
-    padding-top: 16px;
-    padding-bottom: 16px
-} */
-
 
 /*MEDIA QUERIES*/
 @media (max-width: 1024px) {
