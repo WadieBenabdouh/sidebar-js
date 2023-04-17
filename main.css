@@ -121,10 +121,6 @@ header .container nav a {
     text-decoration: none;
 }
 
-header.is-scrolling {
-    background-color: #12002F
-}
-
 /*MEDIA QUERIES*/
 @media (max-width: 1024px) {
     .container {
