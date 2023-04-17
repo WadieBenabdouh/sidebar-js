@@ -21,7 +21,15 @@ body {
     border: none;
 }
 
-.hamburger .bar,
+.hamburger .bar {
+    background-color: red;
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin: 6px 0px;
+    transition: 0.3s
+}
+
 .hamburger:after,
 .hamburger:before {
     content: '';
@@ -31,6 +39,7 @@ body {
     background-color: #fff;
     margin: 6px 0px;
     transition: 0.3s
+        /*animation when clicked*/
 }
 
 .hamburger.is-active:before {
@@ -105,12 +114,6 @@ header .container nav {
     grid-template-columns: repeat(4, auto)
 }
 
-@media (max-width: 767px) {
-    header .container nav {
-        display: none
-    }
-}
-
 header .container nav a {
     color: inherit;
     font-size: 20px;
@@ -148,6 +151,12 @@ header.is-scrolling .container {
     }
 
     .hamburger {
+        display: none
+    }
+}
+
+@media (max-width: 767px) {
+    header .container nav {
         display: none
     }
 }
